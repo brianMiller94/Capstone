@@ -375,6 +375,6 @@ public class Amazon_Sync_async extends AsyncTask<Combo_Context_View,Integer,Stri
         super.onCancelled();
         ProgressBar progressBar = (ProgressBar) applicationView;
         progressBar.setProgress(0);
-        Toast.makeText(applicationContext, "Something Went Wrong with Syncing", Toast.LENGTH_SHORT).show();
+        Toast.makeText(applicationContext, "SYNCING HAS BEEN DISABLED", Toast.LENGTH_SHORT).show();
     }
 }

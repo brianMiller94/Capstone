@@ -85,6 +85,6 @@ public class Amazon_Sync_Delete_async extends AsyncTask<Combo_Context_Object,Int
     @Override
     protected void onCancelled() {
         super.onCancelled();
-        Toast.makeText(applicationContext, "Something Went Wrong with Syncing", Toast.LENGTH_SHORT).show();
+        Toast.makeText(applicationContext, "SYNCING HAS BEEN DISABLED", Toast.LENGTH_SHORT).show();
     }
 }
