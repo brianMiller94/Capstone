@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/masterCheckIn_barcodeText_EditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:hint="@string/scan_barcode" />
+
+        <Button
+            android:id="@+id/masterCheckIn_Scan_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/scan" />
+
+        <Button
+            android:id="@+id/masterCheckIn_checkIn_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/check_In" />
+
+        <Button
+            android:id="@+id/masterCheckIn_Finish_Button"
+            android:text="@string/done"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <!-- Item Container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/items"
+                android:layout_gravity="center"
+                android:textSize="15sp"/>
+            <ListView
+                android:id="@+id/masterCheckIn_checkedOutItems_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                tools:listitem="@layout/content_check_in_items"
+                />
+
+        </LinearLayout>
+        <!-- Accessory Container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accessories"
+                android:layout_gravity="center"
+                android:textSize="15sp"/>
+
+            <ListView
+                android:id="@+id/masterCheckIn_checkedOutAccessories_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                tools:listitem="@layout/content_check_in_accessories"
+                />
+
+        </LinearLayout>
+        <!-- Bundle Container -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_margin="@dimen/text_margin"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bundles"
+                android:layout_gravity="center"
+                android:textSize="15sp"/>
+
+            <ListView
+            android:id="@+id/masterCheckIn_checkedOutBundles_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@null"
+            tools:listitem="@layout/content_check_in_bundles"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

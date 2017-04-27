@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp"
+              android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:columnCount="4"
+            android:orientation="vertical"
+            >
+
+            <!-- Row 0 -->
+
+            <EditText
+                android:id="@+id/createEvent_name_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="0"
+                android:inputType="textAutoCorrect"
+                tools:text="Dummy Event Name"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="0"
+                android:labelFor="@id/createEvent_name_editText"
+                android:text="@string/itemName"/>
+
+            <!-- Row 1 -->
+
+            <EditText
+                android:id="@+id/createEvent_description_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:inputType="textMultiLine"
+                tools:text="Dummy Event Description"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:labelFor="@id/createEvent_description_editText"
+                android:text="@string/description"/>
+
+            <!-- Row 3 -->
+
+            <com.inventory_tracker.company_name.eventinventorytracker.custom_widgets.improvedDatePicker
+                android:id="@+id/createEvent_dateStart_datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:minDate="01/01/2010"
+                android:layout_marginLeft="15dp"
+                >
+            </com.inventory_tracker.company_name.eventinventorytracker.custom_widgets.improvedDatePicker>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="3"
+                android:labelFor="@id/createEvent_dateStart_editText"
+                android:text="@string/start_date"
+                android:layout_marginTop="35dp"/>
+
+            <!-- Row 4 -->
+
+            <com.inventory_tracker.company_name.eventinventorytracker.custom_widgets.improvedDatePicker
+                android:id="@+id/createEvent_dateEnd_datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:minDate="01/01/2010"
+                android:layout_marginLeft="15dp"
+                >
+            </com.inventory_tracker.company_name.eventinventorytracker.custom_widgets.improvedDatePicker>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="4"
+                android:labelFor="@id/createEvent_dateEnd_editText"
+                android:text="@string/End_Date"
+                android:layout_marginTop="35dp"/>
+
+            <LinearLayout
+                android:layout_column="0"
+                android:layout_columnSpan="4"
+                android:layout_row="5">
+                <Button
+                    android:id="@+id/createEvent_save_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textColor="#ffab40"/>
+
+                <Button
+                    android:id="@+id/createEvent_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffab40"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/cancel"
+                    android:layout_marginRight="250dp"
+                    />
+
+                <Button
+                    android:id="@+id/createEvent_addItems_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/add_items"
+                    android:textColor="#ffab40"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        card_view:cardElevation="6dp"
+        card_view:cardUseCompatPadding="true"
+        >
+
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4">
+
+            <!-- Row 0 -->
+
+            <EditText
+                android:id="@+id/detailAccessory_name_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="0"
+                android:inputType="textAutoCorrect"
+                tools:text="Dummy Accessory Name"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="0"
+                android:labelFor="@id/detailAccessory_name_editText"
+                android:text="@string/accessory_name"/>
+
+
+            <!-- Row 1 -->
+
+            <EditText
+                android:id="@+id/detailAccessory_totalQuantity_editText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:inputType="number"
+                tools:text="10"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:labelFor="@id/detailAccessory_totalQuantity_editText"
+                android:text="@string/accessory_totalQuantity"/>
+
+            <!-- Row 2 -->
+
+            <EditText
+                android:id="@+id/detailAccessory_onHand_editText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="2"
+                android:backgroundTint="#808080"
+                android:inputType="number"
+                android:textColor="@drawable/edit_text_selector"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="2"
+                android:labelFor="@id/detailAccessory_onHand_editText"
+                android:text="@string/accessory_OnHand"/>
+
+            <!-- Row 3 -->
+
+
+            <EditText
+                android:id="@+id/detailAccessory_barcode_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="3"
+                android:inputType="textShortMessage"
+                tools:text="1EET356S4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="3"
+                android:labelFor="@id/detailAccessory_barcode_editText"
+                android:text="@string/accessory_barcode"/>
+
+            <Button
+                android:id="@+id/detailAccessory_takePhoto_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="3"
+                android:gravity="center"
+                android:text="@string/scan"
+                android:textColor="#ffab40"
+                android:layout_marginTop="18dp"/>
+
+            <LinearLayout
+                android:layout_column="0"
+                android:layout_row="4"
+                android:layout_columnSpan="4"
+                android:layout_width="wrap_content">
+
+                <Button
+                    android:id="@+id/detailAccessory_save_button"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/save"
+                    android:textColor="#ffab40"/>
+
+                <Button
+                    android:id="@+id/detailAccessory_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffab40"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="330dp"
+                    android:text="@string/cancel"
+                    />
+
+                <Button
+                    android:id="@+id/detailAccessory_delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffab40"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/delete"
+                    />
+            </LinearLayout>
+        </GridLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

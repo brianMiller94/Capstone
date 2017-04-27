@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/contentAccessories_Name_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_margin="@dimen/text_margin"
+        tools:text="Accessory name"/>
+<!--
+    <TextView
+        android:id="@+id/contentAccessories_Description_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_margin="@dimen/text_margin"
+        tools:text="4 ft HDMI Cable"/>
+
+    <TextView
+        android:id="@+id/contentAccessories_onHand_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_margin="@dimen/text_margin"
+        tools:text="On Hand: 5"/>
+-->
+</LinearLayout>

@@ -1,0 +1,138 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:columnCount="3">
+
+    <!-- Row 0 -->
+
+    <EditText
+        android:id="@+id/createItem_name_editText"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Dummy Item 1 Name"
+        android:inputType="textAutoCorrect" />
+
+
+    <TextView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemName"
+        android:labelFor="@id/createItem_name_editText"/>
+
+
+    <!-- Row 1 -->
+
+    <EditText
+        android:id="@+id/createItem_Description_editText"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Dummy Item 1 Description"
+        android:inputType="textAutoCorrect" />
+
+
+    <TextView
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/item_description"
+        android:labelFor="@id/createItem_Description_editText"/>
+
+    <!-- Row 2 -->
+
+
+    <EditText
+        android:id="@+id/createItem_barcode_editText"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Dummy Item 1 Barcode: 1A2B6752"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/item_barcode"
+        android:labelFor="@id/createItem_barcode_editText"/>
+
+    <Button
+        android:id="@+id/createItem_takePhoto_button"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:gravity="center"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo" />
+
+    <!-- Row 3 -->
+
+    <CheckBox
+        android:id="@+id/createItem_checkIn_checkBox"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checked_in"
+        android:labelFor="@id/createItem_checkIn_checkBox"/>
+
+    <!-- Row 4 -->
+
+
+    <EditText
+        android:id="@+id/createItem_serialNumber_EditText"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_row="4"
+        android:layout_column="1">
+
+    </EditText>
+
+    <TextView
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serialNumber"
+        android:labelFor="@id/createItem_serialNumber_EditText"/>
+
+    <!-- Row 5 -->
+
+    <Button
+        android:id="@+id/createItem_save_button"
+        android:layout_row="5"
+        android:layout_columnSpan="1"
+        android:layout_column="0"
+        android:text="@string/add"/>
+
+
+</GridLayout>

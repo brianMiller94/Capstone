@@ -1,0 +1,116 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:columnCount="4">
+
+    <!-- Row 0 -->
+
+    <EditText
+        android:id="@+id/createAccessory_name_editText"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Dummy Accessory Name"
+        android:inputType="textAutoCorrect" />
+
+
+    <TextView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemName"
+        android:labelFor="@id/createAccessory_name_editText"/>
+
+
+    <!-- Row 1 -->
+
+    <EditText
+        android:id="@+id/createAccessory_totalQuantity_editText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_row="1"
+        android:inputType="number"
+        tools:text="10" />
+
+
+    <TextView
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accessory_totalQuantity"
+        android:labelFor="@id/createAccessory_totalQuantity_editText"/>
+
+    <!-- Row 2 -->
+
+    <EditText
+        android:id="@+id/createAccessory_onHandQuantity_editText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_row="2"
+        android:inputType="number"
+        tools:text="5" />
+
+
+    <TextView
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accessory_OnHand"
+        android:labelFor="@id/createAccessory_onHandQuantity_editText"/>
+
+    <!-- Row 3 -->
+
+
+    <EditText
+        android:id="@+id/createAccessory_barcode_editText"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="1EET356S4"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/item_barcode"
+        android:labelFor="@id/createAccessory_barcode_editText"/>
+
+    <Button
+        android:id="@+id/createAccessory_takePhoto_button"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:gravity="center"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_photo" />
+
+    <Button
+        android:id="@+id/createAccessory_save_button"
+        android:layout_row="4"
+        android:layout_columnSpan="1"
+        android:layout_column="1"
+        android:text="@string/add"/>
+
+
+</GridLayout>

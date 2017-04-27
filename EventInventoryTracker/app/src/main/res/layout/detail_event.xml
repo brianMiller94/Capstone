@@ -1,0 +1,132 @@
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:columnCount="4">
+
+    <!-- Row 0 -->
+
+    <EditText
+        android:id="@+id/detailEvent_name_editText"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:text="Dummy Event Name"
+        android:inputType="textAutoCorrect" />
+
+
+    <TextView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/itemName"
+        android:labelFor="@id/detailEvent_name_editText"/>
+
+    <!-- Row 1 -->
+
+    <EditText
+        android:id="@+id/detailEvent_description_editText"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_row="1"
+        android:layout_rowSpan="2"
+        android:inputType="textMultiLine"
+        tools:text="Dummy Event Description" />
+
+
+    <TextView
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:labelFor="@id/detailEvent_description_editText"/>
+
+    <!-- Row 3 -->
+
+    <EditText
+        android:id="@+id/detailEvent_dateStart_editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_row="3"
+        android:inputType="date"
+        tools:text="5/12/2017" />
+
+
+    <TextView
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_date"
+        android:labelFor="@id/detailEvent_dateStart_editText"/>
+
+    <!-- Row 4 -->
+
+    <EditText
+        android:id="@+id/detailEvent_dateEnd_editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_row="4"
+        android:inputType="date"
+        tools:text="5/17/2017" />
+
+
+    <TextView
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/End_Date"
+        android:labelFor="@id/detailEvent_dateEnd_editText"/>
+
+    <!-- Row 5 -->
+
+    <Button
+        android:id="@+id/detailEvent_addItems_button"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_row="5"
+        android:text="@string/add_items"/>
+
+    <Button
+        android:id="@+id/detailEvent_save_button"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_row="5"
+        android:text="@string/save"/>
+
+    <!-- Row 6 -->
+
+    <Button
+        android:id="@+id/detail_event_packUp_button"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_row="6"
+        android:text="@string/pack_up_items"/>
+
+    <Button
+        android:id="@+id/detailEvent_checkInItems_button"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_row="6"
+        android:text="@string/check_in_items"/>
+
+
+</GridLayout>
+

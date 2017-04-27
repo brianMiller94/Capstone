@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+    <tab
+        id="@+id/tab_add"
+        icon="@drawable/ic_add"
+        title="Add"
+        barColorWhenSelected="#FFFAFAFA"/>
+    <tab
+        id="@+id/tab_inventory"
+        icon="@drawable/ic_clipboard"
+        title="Inventory"
+        barColorWhenSelected="#FFFAFAFA"/>
+    <tab
+        id="@+id/tab_events"
+        icon="@drawable/ic_event"
+        title="Events"
+        barColorWhenSelected="#FFFAFAFA"/>
+
+</tabs>

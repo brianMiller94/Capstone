@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.inventory_tracker.company_name.eventinventorytracker">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_4k"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Custom">
+        <activity android:name=".Dashboard"/>
+        <activity android:name=".For_Result_Activities.ScanActivity" />
+        <activity android:name=".DatabaseSyncActivity" />
+        <activity
+            android:name=".ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InventoryItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inventory_tracker.company_name.eventinventorytracker.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".EventListActivity"
+            android:label="@string/title_event_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EventDetailActivity"
+            android:label="@string/title_event_detail"
+            android:parentActivityName=".EventListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.inventory_tracker.company_name.eventinventorytracker.EventListActivity" />
+        </activity>
+        <activity
+            android:name=".Create_Activities.Item"
+            android:label="@string/title_create_item"/>
+        <activity
+            android:name=".Create_Activities.Accessory"
+            android:label="@string/title_create_accessory"
+            />
+        <activity
+            android:name=".Create_Activities.Item_Bundle"
+            android:label="@string/title_create_bundle"
+            />
+        <activity
+            android:name=".Create_Activities.Event"
+            android:label="@string/title_create_event"
+            />
+        <activity android:name=".AndroidDatabaseManager"/>
+        <activity
+            android:name=".For_Result_Activities.CheckIn"
+            android:label="@string/title_activity_check_in"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".For_Result_Activities.PickItemsListActivity"
+            android:label="@string/title_blah_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".barcode.BarcodeCaptureActivity"
+            android:label="Read Barcode"/>
+
+        <activity
+            android:name=".ItemListActivityWithSearch"
+            android:label="Item Search"/>
+
+    </application>
+
+</manifest>
